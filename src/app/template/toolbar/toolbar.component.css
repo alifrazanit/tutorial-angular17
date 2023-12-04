@@ -1,0 +1,49 @@
+mat-toolbar {
+  padding: 0 4rem 0 4rem;
+  background: #012346;
+  color: #FAEEFA;
+  border-bottom: 1px solid #fc10a3;
+  box-shadow: 0px 5px 20px 0px #fc10a3;
+}
+
+mat-toolbar .logo {
+  width: 4rem;
+  height: auto;
+}
+
+mat-toolbar .icon-location {
+  width: 2rem;
+  height: auto;
+}
+mat-toolbar .spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar .menu-collapse {
+  display: flex;
+  gap: 16px;
+}
+
+mat-toolbar .mat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-menu {
+  display: none;
+}
+mat-toolbar .menu-collapse a:hover{
+  cursor: pointer;
+  color: #FF427E;
+}
+@media only screen and (max-width: 600px) {
+  .burger-menu {
+    display: block;
+  }
+  mat-toolbar .menu-collapse {
+    display: none;
+  }
+  mat-toolbar {
+    padding: 0 1rem 0 1rem;
+  }
+}

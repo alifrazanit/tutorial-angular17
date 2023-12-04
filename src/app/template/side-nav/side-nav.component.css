@@ -1,0 +1,41 @@
+.side-nav{
+    font-family: 'Poppins', sans-serif;
+    background-color: #012346;
+    color: #FAEEFA;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0 1rem 0 1rem;
+}
+.side-nav .side-header{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    gap: 10px;
+    padding-top: 1rem;
+    
+}
+.side-nav .side-header .side-header-content p {
+    margin: 0;
+}
+.side-nav .side-header .nick-name{
+    margin: 0;
+    display: inline-block;
+    background: #FC10A3;
+    padding: 5px;
+    border-radius: 8px;
+    color: #FAEEFA;
+}
+.side-nav .side-header .side-header-content .name{
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.side-nav .side-header .side-header-content .position{
+    font-size: 12px;
+}
+
+.side-nav .list-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

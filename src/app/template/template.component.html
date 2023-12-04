@@ -1,0 +1,8 @@
+<mat-drawer-container class="example-container" [hasBackdrop]="true">
+    <mat-drawer #drawer [mode]="'over'">
+        <app-side-nav></app-side-nav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-toolbar (onOpenSideMenu)="OpenSideMenu($event)"></app-toolbar>
+    </mat-drawer-content>
+</mat-drawer-container>
