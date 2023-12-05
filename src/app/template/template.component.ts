@@ -5,6 +5,7 @@ import { MatSidenavModule, MatSidenav } from '@angular/material/sidenav';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -17,7 +18,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     MatButtonModule,
     MatSelectModule,
     MatFormFieldModule,
-    SideNavComponent
+    SideNavComponent,
+    RouterOutlet
   ],
   templateUrl: './template.component.html',
   styleUrl: './template.component.css'

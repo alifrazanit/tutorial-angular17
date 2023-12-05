@@ -5,6 +5,7 @@
     height: 100vh;
     overflow: hidden;
     padding: 0 1rem 0 1rem;
+    border-right: 1px solid #FC10A3;
 }
 .side-nav .side-header{
     display: flex;
@@ -24,6 +25,7 @@
     padding: 5px;
     border-radius: 8px;
     color: #FAEEFA;
+    font-weight: bold;
 }
 .side-nav .side-header .side-header-content .name{
     font-weight: 900;
@@ -38,4 +40,14 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+.side-nav .list-menu li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.side-nav .list-menu .menu-item{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    color: #FAEEFA;
 }

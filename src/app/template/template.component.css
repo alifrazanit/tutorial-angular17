@@ -2,3 +2,6 @@ mat-drawer-content {
     min-height: 100svh;
 }
 
+mat-drawer-content mat-drawer{
+    box-shadow: 2px 0px 10px 0px #fc10a3 !important;
+}
