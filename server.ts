@@ -7,16 +7,16 @@ import bootstrap from './src/main.server';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
+  const path = require('path');
   const server = express();
   const serverDistFolder = dirname(fileURLToPath(import.meta.url));
   const browserDistFolder = resolve(serverDistFolder, '../browser');
   const indexHtml = join(serverDistFolder, 'index.server.html');
-
   const commonEngine = new CommonEngine();
 
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
-
+  
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
@@ -45,6 +45,7 @@ export function app(): express.Express {
 
 function run(): void {
   const port = process.env['PORT'] || 4000;
+  const path = require('path');
 
   // Start up the Node server
   const server = app();

@@ -5,13 +5,14 @@ import { MatSidenavModule, MatSidenav } from '@angular/material/sidenav';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SideNavComponent } from './side-nav/side-nav.component';
-import { RouterOutlet } from '@angular/router';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 @Component({
   selector: 'app-template',
   standalone: true,
   imports: [
+    BannerComponent,
     MatButtonModule,
     ToolbarComponent,
     MatSidenavModule,
@@ -19,7 +20,6 @@ import { RouterOutlet } from '@angular/router';
     MatSelectModule,
     MatFormFieldModule,
     SideNavComponent,
-    RouterOutlet
   ],
   templateUrl: './template.component.html',
   styleUrl: './template.component.css'
